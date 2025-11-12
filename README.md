@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+🧠 React Flow Diagram Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A visual node-based diagram builder built with React.js and React Flow, allowing users to create, connect, edit, and export diagrams as PDF or JSON files.
+This project supports real-time editing, custom nodes, and responsive UI for both desktop and mobile.
 
-## Available Scripts
+🚀 Live Features
 
-In the project directory, you can run:
+✅ Create and connect nodes easily
+✅ Edit node labels directly
+✅ Delete nodes dynamically
+✅ Save diagram as PDF
+✅ Export diagram data as JSON
+✅ Load sample diagram
+✅ Responsive layout for mobile screens
+✅ Fully modular and extendable architecture
 
-### `npm start`
+📂 Project Structure
+react-flow-diagram/
+│
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── DiagramCanvas.jsx      # React Flow canvas logic (nodes, edges, PDF, JSON)
+│   │   ├── Sidebar.jsx            # UI for node management and settings
+│   │   └── Navbar.jsx             # Top navigation bar
+│   │
+│   ├── context/
+│   │   └── DiagramContext.jsx     # Manages global state for nodes/edges
+│   │
+│   ├── pages/
+│   │   └── EditorPage.jsx         # Main page (Canvas + Sidebar responsive layout)
+│   │
+│   ├── App.js                     # Root app component with routes
+│   ├── index.js                   # React entry point
+│   ├── styles.css                 # Optional global styles
+│   └── utils/
+│       └── sampleData.js          # Predefined diagram sample
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock / package-lock.json
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+⚙️ Tech Stack
+Tool	Purpose
+React.js	Frontend framework
+React Flow	Diagram visualization
+html2canvas	Convert diagram to image for PDF
+jsPDF	Export diagram as PDF
+Context API	Global state management
+CSS Flexbox	Layout and responsiveness
+🧩 Setup Instructions
+1️⃣ Clone the Repository
+git clone https://github.com/ramesh-46/react-flow-diagram.git
+cd react-flow-diagram
 
-### `npm test`
+2️⃣ Install Dependencies
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3️⃣ Start the Development Server
+npm start
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then open 👉 http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🧱 Usage Guide
+➕ Add a Node
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to the Sidebar → "Add Node", set a Label, and click Add.
 
-### `npm run eject`
+🔗 Connect Nodes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Click and drag between nodes to create an edge (arrow connection).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🖊️ Edit Node
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Click a node → Edit (✏️) button → type new label → press OK.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+❌ Delete Node
 
-## Learn More
+Click a node → Delete (🗑️) button → removes it instantly.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📄 Export Diagram
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+PDF Export: Click “Download Diagram as PDF”
 
-### Code Splitting
+JSON Export: Click “Download Node Data as JSON”
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🧩 Load Sample Data
 
-### Analyzing the Bundle Size
+Click “Load Sample” in the top toolbar to load demo nodes and edges.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📱 Responsive Design
 
-### Making a Progressive Web App
+On desktop → Sidebar appears to the right of the canvas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+On mobile (<768px) → Sidebar moves below the canvas.
 
-### Advanced Configuration
+Canvas and controls auto-resize to fit screen width.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🧠 Future Enhancements
 
-### Deployment
+🔁 Drag-and-drop node types in Sidebar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+💾 Save diagrams in browser localStorage
 
-### `npm run build` fails to minify
+🌐 Share diagrams online (via links)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🎨 Custom node colors and icons
+
+🧩 Edge label editing
+
+📸 Preview
+
+(Add a screenshot of your diagram once built)

@@ -1,4 +1,4 @@
-🧠 React Flow Diagram Builder
+🧠 React Flow Diagram Builder  https://react-flow-diagram-rose.vercel.app/
 
 A visual node-based diagram builder built with React.js and React Flow, allowing users to create, connect, edit, and export diagrams as PDF or JSON files.
 This project supports real-time editing, custom nodes, and responsive UI for both desktop and mobile.
@@ -65,7 +65,7 @@ npm install
 npm start
 
 
-Then open 👉 http://localhost:3000
+Then open 👉[ http://localhost:3000](https://react-flow-diagram-rose.vercel.app/)
 
 🧱 Usage Guide
 ➕ Add a Node
@@ -116,4 +116,5 @@ Canvas and controls auto-resize to fit screen width.
 
 📸 Preview
 
-(Add a screenshot of your diagram once built)
+(Add a screenshot of your diagram once built)<img width="1919" height="1061" alt="image" src="https://github.com/user-attachments/assets/b732e6e8-4cb6-4227-99cb-dd2e91cc3462" />
+

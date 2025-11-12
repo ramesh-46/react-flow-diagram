@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": { "x": 50, "y": 50 },
+      "data": { "label": "Start Node", "meta": { "description": "Entry point" } }
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": { "x": 300, "y": 50 },
+      "data": { "label": "Process A", "meta": { "owner": "team-a" } }
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": { "x": 300, "y": 250 },
+      "data": { "label": "Process B", "meta": { "owner": "team-b" } }
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": { "x": 600, "y": 150 },
+      "data": { "label": "End Node", "meta": { "note": "finish" } }
+    }
+  ],
+  "edges": [
+    { "id": "e1-2", "source": "1", "target": "2", "label": "to A" },
+    { "id": "e2-3", "source": "2", "target": "3", "label": "to B" },
+    { "id": "e3-4", "source": "3", "target": "4", "label": "to End" }
+  ]
+}

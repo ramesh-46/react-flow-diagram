@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const container = {
-  padding: 20,
-  display: 'flex',
-  flexDirection: 'column',
-  gap: 16,
-};
+// const container = {
+//   padding: 20,
+//   display: 'flex',
+//   flexDirection: 'column',
+//   gap: 16,
+// };
 
 const card = {
   border: '1px solid #e2e8f0',
